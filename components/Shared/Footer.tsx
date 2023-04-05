@@ -94,10 +94,10 @@ const Footer = () => {
           <div className="grid md:grid-cols-2 gap-4">
             <div className="flex order-last md:order-first flex-wrap items-center justify-center md:justify-start">
               <p className="text-white flex flex-wrap items-center text-sm lg:text-base">
-                &copy; 2022 Sinp. Made with{" "}
+                &copy; 2022 Ecom{" "}
                 <i className="icon-heart mx-2 text-orange"></i> by
                 <Link href="#" className="ml-1 transition hover:text-orange">
-                  Develop
+                  Developer
                 </Link>
                 .
               </p>

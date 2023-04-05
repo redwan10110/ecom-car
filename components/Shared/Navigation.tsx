@@ -9,7 +9,7 @@ const Navigation = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-//   const [isSettingsCardOpen, setIsSettingsCardOpen] = useState(false);
+  const [isSettingsCardOpen, setIsSettingsCardOpen] = useState(false);
 
   const openSearch = () => {
     setIsSearchOpen(true);
@@ -32,11 +32,11 @@ const Navigation = () => {
     setIsMobileMenuOpen(false);
   };
 
-  console.log(isSearchOpen);
+  // console.log(isSearchOpen);
 
   return (
     <>
-      <header id="sticky-header" className="">
+      <header id="sticky-header" className="is-sticky">
         <div className="px-4 md:px-10 2xl:px-24 py-6 lg:py-0">
           <div className="flex items-center lg:relative">
             <div className="w-6/12 lg:w-2/12">
@@ -46,7 +46,7 @@ const Navigation = () => {
                   <Image
                     src={logo}
                     alt="logo"
-                    loading="lazy"
+                    priority={true}
                     width="125"
                     height="45"
                   />
@@ -79,21 +79,13 @@ const Navigation = () => {
                       className="block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-primary hover:text-orange transition-all nav-item"
                       href="#"
                     >
-                      Blog
-                    </Link>
-                  </li>
-                  <li className="main-menu__item relative group">
-                    <Link
-                      className="block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-primary hover:text-orange transition-all nav-item"
-                      href="#"
-                    >
                       pages
                     </Link>
                     <ul className="submenu bg-white py-3 px-8 shadow transition-all absolute left-0 top-full opacity-0 group-hover:opacity-100 invisible group-hover:visible group-hover:-translate-y-3 transform z-10 min-w-max">
                       <li className="my-3">
                         <Link
                           className="text-dark font-normal text-base capitalize transition-all hover:text-orange"
-                          href="about-us.html"
+                          href="/about-us"
                         >
                           About Page
                         </Link>
@@ -101,7 +93,7 @@ const Navigation = () => {
                       <li className="my-3">
                         <Link
                           className="text-dark font-normal text-base capitalize transition-all hover:text-orange"
-                          href="cart.html"
+                          href="/cart"
                         >
                           Cart Page
                         </Link>
@@ -109,69 +101,40 @@ const Navigation = () => {
                       <li className="my-3">
                         <Link
                           className="text-dark font-normal text-base capitalize transition-all hover:text-orange"
-                          href="checkout.html"
+                          href="/checkout"
                         >
                           Checkout Page
                         </Link>
                       </li>
+                      
                       <li className="my-3">
                         <Link
                           className="text-dark font-normal text-base capitalize transition-all hover:text-orange"
-                          href="compare.html"
+                          href="/login"
                         >
-                          Compare Page
+                          Login
                         </Link>
                       </li>
                       <li className="my-3">
                         <Link
                           className="text-dark font-normal text-base capitalize transition-all hover:text-orange"
-                          href="login-register.html"
+                          href="/register"
                         >
-                          Login & Register Page
+                          Register
                         </Link>
                       </li>
                       <li className="my-3">
                         <Link
                           className="text-dark font-normal text-base capitalize transition-all hover:text-orange"
-                          href="account.html"
+                          href="dashboard/account"
                         >
                           Account Page
                         </Link>
                       </li>
-                      <li className="my-3">
-                        <Link
-                          className="text-dark font-normal text-base capitalize transition-all hover:text-orange"
-                          href="whishlist.html"
-                        >
-                          Wishlist Page
-                        </Link>
-                      </li>
-                      <li className="my-3">
-                        <Link
-                          className="text-dark font-normal text-base capitalize transition-all hover:text-orange"
-                          href="faq.html"
-                        >
-                          Frequently Questions
-                        </Link>
-                      </li>
-                      <li className="my-3">
-                        <Link
-                          className="text-dark font-normal text-base capitalize transition-all hover:text-orange"
-                          href="404.html"
-                        >
-                          Error 404
-                        </Link>
-                      </li>
+                      
                     </ul>
                   </li>
-                  <li className="main-menu__item">
-                    <Link
-                      className="block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-primary hover:text-orange transition-all nav-item"
-                      href="#"
-                    >
-                      Contact
-                    </Link>
-                  </li>
+                  
                 </ul>
               </nav>
             </div>
@@ -367,45 +330,11 @@ const Navigation = () => {
             <ul>
               <li className="relative block">
                 <Link
-                  href="#"
+                  href="/home"
                   className="block capitalize font-normal text-base my-2 py-1 font-roboto"
                 >
                   Home
                 </Link>
-                <ul className="offcanvas-submenu static top-auto hidden w-full visible opacity-100">
-                  <li>
-                    <Link
-                      className="text-sm py-2 px-4 text-dark font-light block font-roboto transition-all hover:text-orange"
-                      href="index.html"
-                    >
-                      Airpod
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className="text-sm py-2 px-4 text-dark font-light block font-roboto transition-all hover:text-orange"
-                      href="index-2.html"
-                    >
-                      Smartwatch
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className="text-sm py-2 px-4 text-dark font-light block font-roboto transition-all hover:text-orange"
-                      href="index-3.html"
-                    >
-                      Drone
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className="text-sm py-2 px-4 text-dark font-light block font-roboto transition-all hover:text-orange"
-                      href="index-4.html"
-                    >
-                      BackPack
-                    </Link>
-                  </li>
-                </ul>
               </li>
               <li className="relative block">
                 <Link
@@ -414,271 +343,16 @@ const Navigation = () => {
                 >
                   Shop
                 </Link>
-                <ul className="offcanvas-submenu static top-auto hidden w-full visible opacity-100">
-                  <li>
-                    <Link
-                      className="text-sm py-2 px-4 text-dark font-light block font-roboto transition-all hover:text-orange"
-                      href="#"
-                    >
-                      Shop Grid
-                    </Link>
-                    <ul className="offcanvas-submenu static top-auto hidden w-full visible opacity-100">
-                      <li>
-                        <Link
-                          className="text-sm pt-3 px-10 pb-1 text-dark font-light block font-roboto transition-all hover:text-orange"
-                          href="shop-grid-3-column.html"
-                        >
-                          Shop Grid 3 Column
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          className="text-sm pt-3 px-10 pb-1 text-dark font-light block font-roboto transition-all hover:text-orange"
-                          href="shop-grid-4-column.html"
-                        >
-                          Shop Grid 4 Column
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          className="text-sm pt-3 px-10 pb-1 text-dark font-light block font-roboto transition-all hover:text-orange"
-                          href="shop-grid-left-sidebar.html"
-                        >
-                          Shop Grid Left Sidebar
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          className="text-sm pt-3 px-10 pb-1 text-dark font-light block font-roboto transition-all hover:text-orange"
-                          href="shop-grid-right-sidebar.html"
-                        >
-                          shop Grid Right Sidebar
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <Link
-                      className="text-sm py-2 px-4 text-dark font-light block font-roboto transition-all hover:text-orange"
-                      href="#"
-                    >
-                      shop list
-                    </Link>
-                    <ul className="offcanvas-submenu static top-auto hidden w-full visible opacity-100">
-                      <li>
-                        <Link
-                          className="text-sm pt-3 px-10 pb-1 text-dark font-light block font-roboto transition-all hover:text-orange"
-                          href="shop-list.html"
-                        >
-                          Shop List
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          className="text-sm pt-3 px-10 pb-1 text-dark font-light block font-roboto transition-all hover:text-orange"
-                          href="shop-list-left-sidebar.html"
-                        >
-                          Shop List Left Sidebar
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          className="text-sm pt-3 px-10 pb-1 text-dark font-light block font-roboto transition-all hover:text-orange"
-                          href="shop-list-right-sidebar.html"
-                        >
-                          Shop List right Sidebar
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <Link
-                      className="text-sm py-2 px-4 text-dark font-light block font-roboto transition-all hover:text-orange"
-                      href="#"
-                    >
-                      blogs
-                    </Link>
-                    <ul className="offcanvas-submenu static top-auto hidden w-full visible opacity-100">
-                      <li>
-                        <Link
-                          className="text-sm pt-3 px-10 pb-1 text-dark font-light block font-roboto transition-all hover:text-orange"
-                          href="blog-grid-3-column.html"
-                        >
-                          Blog Grid 3 Column
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          className="text-sm pt-3 px-10 pb-1 text-dark font-light block font-roboto transition-all hover:text-orange"
-                          href="blog-grid-4-column.html"
-                        >
-                          Blog Grid 4 Column
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          className="text-sm pt-3 px-10 pb-1 text-dark font-light block font-roboto transition-all hover:text-orange"
-                          href="blog-grid-left-sidebar.html"
-                        >
-                          Blog Grid Left Sidebar
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          className="text-sm pt-3 px-10 pb-1 text-dark font-light block font-roboto transition-all hover:text-orange"
-                          href="blog-grid-right-sidebar.html"
-                        >
-                          Blog Grid Right Sidebar
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <Link
-                      className="text-sm py-2 px-4 text-dark font-light block font-roboto transition-all hover:text-orange"
-                      href="#"
-                    >
-                      Product Types
-                    </Link>
-                    <ul className="offcanvas-submenu static top-auto hidden w-full visible opacity-100">
-                      <li>
-                        <Link
-                          className="text-sm py-2 px-4 text-dark font-light block font-roboto transition-all hover:text-orange"
-                          href="single-product.html"
-                        >
-                          Shop Single
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          className="text-sm py-2 px-4 text-dark font-light block font-roboto transition-all hover:text-orange"
-                          href="single-product-configurable.html"
-                        >
-                          Shop Variable
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          className="text-sm py-2 px-4 text-dark font-light block font-roboto transition-all hover:text-orange"
-                          href="single-product-affiliate.html"
-                        >
-                          Shop Affiliate
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          className="text-sm py-2 px-4 text-dark font-light block font-roboto transition-all hover:text-orange"
-                          href="single-product-group.html"
-                        >
-                          Shop Group
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
               </li>
               <li className="relative block">
                 <Link
-                  href="#"
-                  className="block capitalize font-normal text-base my-2 py-1 font-roboto"
-                >
-                  Blog
-                </Link>
-                <ul className="offcanvas-submenu static top-auto hidden w-full visible opacity-100">
-                  <li>
-                    <Link
-                      className="text-sm py-2 px-4 text-dark font-light block font-roboto transition-all hover:text-orange"
-                      href="#"
-                    >
-                      Blog Grid
-                    </Link>
-                    <ul className="offcanvas-submenu static top-auto hidden w-full visible opacity-100">
-                      <li>
-                        <Link
-                          className="text-sm pt-3 px-10 pb-1 text-dark font-light block font-roboto transition-all hover:text-orange"
-                          href="blog-grid-3-column.html"
-                        >
-                          Blog Grid 3 column
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          className="text-sm pt-3 px-10 pb-1 text-dark font-light block font-roboto transition-all hover:text-orange"
-                          href="blog-grid-2-column.html"
-                        >
-                          Blog Grid 2 column
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          className="text-sm pt-3 px-10 pb-1 text-dark font-light block font-roboto transition-all hover:text-orange"
-                          href="blog-grid-left-sidebar.html"
-                        >
-                          Blog Grid Left Sidebar
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          className="text-sm pt-3 px-10 pb-1 text-dark font-light block font-roboto transition-all hover:text-orange"
-                          href="blog-grid-right-sidebar.html"
-                        >
-                          Blog Grid Right Sidebar
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <Link
-                      className="text-sm py-2 px-4 text-dark font-light block font-roboto transition-all hover:text-orange"
-                      href="#"
-                    >
-                      Blog List
-                    </Link>
-                    <ul className="offcanvas-submenu static top-auto hidden w-full visible opacity-100">
-                      <li>
-                        <Link
-                          className="text-sm pt-3 px-10 pb-1 text-dark font-light block font-roboto transition-all hover:text-orange"
-                          href="blog-list-left-sidebar.html"
-                        >
-                          Blog List Left Sidebar
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          className="text-sm pt-3 px-10 pb-1 text-dark font-light block font-roboto transition-all hover:text-orange"
-                          href="blog-list-right-sidebar.html"
-                        >
-                          Blog List Right Sidebar
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          className="text-sm pt-3 px-10 pb-1 text-dark font-light block font-roboto transition-all hover:text-orange"
-                          href="blog-details.html"
-                        >
-                          Blog details
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li className="relative block">
-                <Link
-                  href="about-us.html"
+                  href="/about-us"
                   className="relative block capitalize font-normal text-base my-2 py-1 font-roboto"
                 >
                   about Us
                 </Link>
               </li>
-              <li className="relative block">
-                <Link
-                  href="contact.html"
-                  className="relative block capitalize font-normal text-base my-2 py-1 font-roboto"
-                >
-                  Contact Us
-                </Link>
-              </li>
+              
             </ul>
           </nav>
           {/* <!-- offcanvas-menu end --> */}
@@ -688,7 +362,7 @@ const Navigation = () => {
               <li className="block mb-3">
                 <Link
                   className="flex flex-wrap justify-between mb-3 text-base text-dark hover:text-orange"
-                  href="javascript:void(0)"
+                  href="/#"
                 >
                   Currency <i className="icon-arrow-down"></i>
                 </Link>
@@ -714,7 +388,7 @@ const Navigation = () => {
               <li className="block mb-3">
                 <Link
                   className="flex flex-wrap justify-between mb-3 text-base text-dark hover:text-orange"
-                  href="javascript:void(0)"
+                  href="/#"
                 >
                   Account <i className="icon-arrow-down"></i>
                 </Link>
@@ -858,13 +532,13 @@ const Navigation = () => {
             <div className="text-center">
               <Link
                 className="py-5 px-10 block bg-white border border-solid border-gray-600 uppercase font-semibold text-base hover:bg-orange hover:border-orange hover:text-white transition-all leading-none"
-                href="checkout.html"
+                href="/checkout"
               >
                 Checkout
               </Link>
               <Link
                 className="py-5 px-10 block bg-white border border-solid border-gray-600 uppercase font-semibold text-base hover:bg-orange hover:border-orange hover:text-white transition-all leading-none mt-3"
-                href="cart.html"
+                href="/cart"
               >
                 View Cart
               </Link>

@@ -181,7 +181,7 @@ const ShopGrid = () => {
                             <h4>
                               <Link
                                 className="block text-md hover:text-orange transition-all mb-2"
-                                href="#"
+                                href="shop/123"
                               >
                                 Batin crofessor pampden
                               </Link>
