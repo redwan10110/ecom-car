@@ -126,7 +126,7 @@ const Navigation = () => {
                       <li className="my-3">
                         <Link
                           className="text-dark font-normal text-base capitalize transition-all hover:text-orange"
-                          href="dashboard/account"
+                          href="dashboard/"
                         >
                           Account Page
                         </Link>
