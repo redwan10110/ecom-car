@@ -1,4 +1,4 @@
-import AccountDetails from '@/components/Dashboard/accountDetails'
+import AccountDetails from '@/components/Dashboard/AccountDetails'
 import Layout from '@/components/Layout/Layout'
 import React from 'react'
 

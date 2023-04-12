@@ -5,7 +5,7 @@ const Cart = () => {
   return (
     <div>
       {/* <!-- Breadcrumb section start --> */}
-      <div className="py-9 bg-gray-light">
+      <div className="py-5 bg-gray-light" style={{ backgroundImage: "url('/images/GreyBar.png')",backgroundPosition: "center", }}>
         <div className="container">
           <div className="grid grid-cols-12 gap-x-4">
             <div className="col-span-12">
@@ -14,7 +14,7 @@ const Cart = () => {
                   <li className="mr-5">
                     <Link
                       href="/"
-                      className="text-dark font-medium text-base uppercase transition-all hover:text-orange relative before:w-5 before:h-1px before:empty before:absolute before:top-3 before:bg-dark before:transform before:rotate-115 before:-right-5"
+                      className="text-dark font-medium text-base uppercase transition-all hover:text-[#435c7f] relative before:w-5 before:h-1px before:empty before:absolute before:top-3 before:bg-dark before:transform before:rotate-115 before:-right-5"
                     >
                       Home
                     </Link>
@@ -65,7 +65,7 @@ const Cart = () => {
                         <Image
                           width={103}
                           height={115}
-                          src="/images/single-product/sm/product1.webp"
+                          src="/images/single-product/sm/products10.webp"
                           alt="product image"
                         />
                       </Link>
@@ -378,7 +378,7 @@ const Cart = () => {
                     <div className="col-span-2 sm:col-span-1">
                       <Link
                         href="#"
-                        className="inline-block bg-dark leading-none py-4 px-5 md:px-8 text-sm text-white transition-all hover:bg-orange uppercase font-semibold hover:text-white mb-5 sm:mb-0"
+                        className="inline-block bg-dark leading-none py-4 px-5 md:px-8 text-sm text-white transition-all hover:bg-[#435c7f] uppercase font-semibold hover:text-white mb-5 sm:mb-0"
                       >
                         estimate
                       </Link>
@@ -401,7 +401,7 @@ const Cart = () => {
                     <div className="col-span-2 sm:col-span-1">
                       <Link
                         href="#"
-                        className="inline-block bg-dark leading-none py-4 px-5 md:px-8 text-sm text-white transition-all hover:bg-orange uppercase font-semibold hover:text-white mb-8 sm:mb-0"
+                        className="inline-block bg-dark leading-none py-4 px-5 md:px-8 text-sm text-white transition-all hover:bg-[#435c7f] uppercase font-semibold hover:text-white mb-8 sm:mb-0"
                       >
                         apply code
                       </Link>
@@ -424,7 +424,7 @@ const Cart = () => {
                 <div className="border-t border-b border-gray-600 py-5 mt-5">
                   <ul className="flex flex-wrap items-center justify-between">
                     <li className="text-base font-semibold">Total</li>
-                    <li className="text-base font-semibold text-orange">
+                    <li className="text-base font-semibold text-black">
                       $329
                     </li>
                   </ul>
@@ -433,13 +433,13 @@ const Cart = () => {
               <div className="mt-8">
                 <Link
                   href="#"
-                  className="inline-block bg-dark leading-none py-4 px-5 md:px-8 text-sm text-white transition-all hover:bg-orange uppercase font-semibold hover:text-white"
+                  className="inline-block bg-dark leading-none py-4 px-5 md:px-8 text-sm text-white transition-all hover:bg-[#435c7f] uppercase font-semibold hover:text-white"
                 >
                   Update Cart
                 </Link>
                 <Link
                   href="#"
-                  className="inline-block bg-dark leading-none py-4 px-5 md:px-8 text-sm text-white transition-all hover:bg-orange uppercase font-semibold hover:text-white ml-4"
+                  className="inline-block bg-dark leading-none py-4 px-5 md:px-8 text-sm text-white transition-all hover:bg-[#435c7f] uppercase font-semibold hover:text-white ml-4"
                 >
                   checkout
                 </Link>

@@ -5,13 +5,13 @@ const AccountDetails = () => {
   return (
     <>
         {/* Breadcrumb section start */}
-        <div className="py-9 bg-gray-light">
+        <div className="py-5 bg-gray-light" style={{ backgroundImage: "url('/images/GreyBar.png')",backgroundPosition: "center", }}>
         <div className="container">
             <div className="grid grid-cols-12 gap-x-4">
                 <div className="col-span-12">
                     <nav>
                         <ul className="flex flex-wrap items-center justify-center">
-                            <li className="mr-5"><Link href="/" className="text-dark font-medium text-base uppercase transition-all hover:text-orange relative before:w-5 before:h-1px before:empty before:absolute before:top-3 before:bg-dark before:transform before:rotate-115 before:-right-5">Home</Link></li>
+                            <li className="mr-5"><Link href="/" className="text-dark font-medium text-base uppercase transition-all hover:text-[#435c7f] relative before:w-5 before:h-1px before:empty before:absolute before:top-3 before:bg-dark before:transform before:rotate-115 before:-right-5">Home</Link></li>
                             <li className="text-dark font-medium text-base uppercase mr-5">account Page</li>
                         </ul>
                     </nav>
@@ -33,8 +33,8 @@ const AccountDetails = () => {
                         <li><Link className="font-medium py-4 px-5 leading-none uppercase transition-all hover:text-white hover:bg-orange  text-base border-t border-l border-r border-gray-600 block" href="#download">download</Link></li>
                         <li><Link className="font-medium py-4 px-5 leading-none uppercase transition-all hover:text-white hover:bg-orange  text-base border-t border-l border-r border-gray-600 block" href="#payment-method">payment method</Link></li>
                         <li><Link className="font-medium py-4 px-5 leading-none uppercase transition-all hover:text-white hover:bg-orange  text-base border-t border-l border-r border-gray-600 block" href="#address">address</Link></li> */}
-                        <li className="active"><Link className="font-medium py-4 px-5 leading-none uppercase transition-all hover:text-white hover:bg-orange  text-base border-t border-l border-r border-gray-600 block" href="#account"> Account Details</Link></li>
-                        {/* <li><Link className="font-medium py-4 px-5 leading-none uppercase transition-all hover:text-white hover:bg-orange  text-base border-t border-l border-r border-b border-gray-600 block" href="login-register.html">Logout</Link></li> */}
+                        <li className="active"><Link className="font-medium py-4 px-5 leading-none uppercase transition-all hover:text-white hover:bg-[#435c7f]  text-base border-t border-l border-r border-gray-600 block" href="#account"> Account Details</Link></li>
+                        <li><Link className="font-medium py-4 px-5 leading-none uppercase transition-all hover:text-white hover:bg-[#435c7f]  text-base border-t border-l border-r border-b border-gray-600 block" href="/login">Logout</Link></li>
                     </ul>
                 </div>
                 <div className="col-span-12 lg:col-span-8">
@@ -208,7 +208,7 @@ const AccountDetails = () => {
                                         </div>
 
                                         <div className="col-span-12">
-                                            <button className="inline-block leading-none uppercase text-white text-sm bg-dark px-5 py-5 transition-all hover:bg-orange" aria-label="Save Changes">Save Changes</button>
+                                            <button className="inline-block leading-none uppercase text-white text-sm bg-gray-800 px-5 py-5 transition-all hover:bg-[#435c7f]" aria-label="Save Changes">Save Changes</button>
                                         </div>
                                     </div>
                                 </form>

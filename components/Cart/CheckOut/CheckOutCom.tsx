@@ -4,7 +4,7 @@ const CheckOutCom = () => {
   return (
     <>
       {/* Breadcrumb section start */}
-      <div className="py-9 bg-gray-light">
+      <div className="py-5 " style={{ backgroundImage: "url('/images/GreyBar.png')",backgroundPosition: "center", }}>
         <div className="container">
           <div className="grid grid-cols-12 gap-x-4">
             <div className="col-span-12">
@@ -13,7 +13,7 @@ const CheckOutCom = () => {
                   <li className="mr-5">
                     <Link
                       href="index.html"
-                      className="text-dark font-medium text-base uppercase transition-all hover:text-orange relative before:w-5 before:h-1px before:empty before:absolute before:top-3 before:bg-dark before:transform before:rotate-115 before:-right-5"
+                      className="text-dark font-medium text-base uppercase transition-all hover:text-[#435c7f] relative before:w-5 before:h-1px before:empty before:absolute before:top-3 before:bg-dark before:transform before:rotate-115 before:-right-5"
                     >
                       Home
                     </Link>
@@ -160,7 +160,7 @@ const CheckOutCom = () => {
                     type="password"
                   />
                   <button
-                    className="text-center leading-none uppercase text-white text-sm bg-dark px-6 py-4 transition-all hover:bg-orange font-semibold mb-5"
+                    className="text-center leading-none uppercase text-white text-sm bg-dark px-6 py-4 transition-all hover:bg-[#435c7f] font-semibold mb-5"
                     type="submit"
                     aria-label="button"
                   >
@@ -365,7 +365,7 @@ const CheckOutCom = () => {
                 </div>
                 <div className="mt-6">
                   <Link
-                    className="block w-full text-center leading-none uppercase text-white text-sm bg-dark px-5 py-5 transition-all hover:bg-orange font-semibold"
+                    className="block w-full text-center leading-none uppercase text-white text-sm bg-gray-800 px-5 py-5 transition-all hover:bg-[#435c7f] font-semibold"
                     href="#"
                   >
                     Place Order

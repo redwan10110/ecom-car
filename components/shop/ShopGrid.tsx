@@ -3,25 +3,54 @@ import Link from "next/link";
 import { useState } from "react";
 
 const ShopGrid = () => {
+  const [isQuickViewOpen, setIsQuickViewOpen] = useState(false);
+  const [isAddToCartOpen, setIsAddToCartOpen] = useState(false);
+  const openQuickView = () => {
+    setIsQuickViewOpen(true);
+  };
 
-    const [isQuickViewOpen,setIsQuickViewOpen] = useState(false);
-    const [isAddToCartOpen,setIsAddToCartOpen] = useState(false)
-    const openQuickView =()=>{
-        setIsQuickViewOpen(true);
-    }
+  const closeQuickView = () => {
+    setIsQuickViewOpen(false);
+  };
 
-    const closeQuickView = ()=>{
-        setIsQuickViewOpen(false);
-    }
-
-    const openAddToCart =()=>{
-        setIsAddToCartOpen(true);
-    }
-    const closeAddToCart = ()=>{
-        setIsAddToCartOpen(false)
-    }
+  const openAddToCart = () => {
+    setIsAddToCartOpen(true);
+  };
+  const closeAddToCart = () => {
+    setIsAddToCartOpen(false);
+  };
   return (
     <>
+      {/* Breadcrumb section start */}
+      <div
+        className="py-5 "
+        style={{
+          backgroundImage: "url('/images/GreyBar.png')",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="container">
+          <div className="grid grid-cols-12 gap-x-4">
+            <div className="col-span-12">
+              <nav>
+                <ul className="flex flex-wrap items-center justify-center">
+                  <li className="mr-5">
+                    <Link
+                      href="index.html"
+                      className="text-dark font-medium text-base uppercase transition-all hover:text-[#435c7f] relative before:w-5 before:h-1px before:empty before:absolute before:top-3 before:bg-dark before:transform before:rotate-115 before:-right-5"
+                    >
+                      Shop
+                    </Link>
+                  </li>
+                  
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Breadcrumb section end */}
       <div>
         <div className="py-24">
           <div className="container">
@@ -33,7 +62,9 @@ const ShopGrid = () => {
                       <label htmlFor="SortBy">Sort by :</label>
                       <select id="SortBy" className="px-2 bg-transparent">
                         <option defaultValue="manual">Featured</option>
-                        <option defaultValue="best-selling">Best Selling</option>
+                        <option defaultValue="best-selling">
+                          Best Selling
+                        </option>
                         <option defaultValue="title-ascending">
                           Alphabetically, A-Z
                         </option>
@@ -70,15 +101,15 @@ const ShopGrid = () => {
                       <li>
                         <Link
                           href="#grid"
-                          className="text-base hover:text-orange inline-block py-2 px-2"
+                          className="text-base hover:text-[#435c7f] inline-block py-2 px-2"
                         >
                           <i className="icon-grid"></i>
                         </Link>
                       </li>
-                      <li className="active">
+                      <li className="text-[#435c7f]">
                         <Link
                           href="#list"
-                          className="text-base hover:text-orange inline-block py-2 px-2 ml-5"
+                          className="text-base hover:text-[#435c7f] inline-block py-2 px-2 ml-5"
                         >
                           <i className="icon-menu"></i>
                         </Link>
@@ -109,7 +140,10 @@ const ShopGrid = () => {
                             />
                             {/* <!-- actions start --> */}
 
-                            <div className="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10" onClick={openQuickView}>
+                            <div
+                              className="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10"
+                              onClick={openQuickView}
+                            >
                               <ul className="flex items-center justify-center bg-white shadow opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all ease-linear transform translate-y-4 group-hover:-translate-y-0">
                                 <li>
                                   <Link
@@ -180,7 +214,7 @@ const ShopGrid = () => {
                           <div className="py-5 px-4 flex-1">
                             <h4>
                               <Link
-                                className="block text-md hover:text-orange transition-all mb-2"
+                                className="block text-md hover:text-[#435c7f] transition-all mb-2"
                                 href="shop/123"
                               >
                                 Batin crofessor pampden
@@ -197,7 +231,7 @@ const ShopGrid = () => {
                               text.
                             </p>
 
-                            <h5 className="font-bold text-md leading-none text-orange mt-4 mb-4">
+                            <h5 className="font-bold text-md leading-none text-[#435c7f] mt-4 mb-4">
                               <del className="font-normal text-sm mr-1 inline-block">
                                 $110.00
                               </del>
@@ -208,7 +242,7 @@ const ShopGrid = () => {
                               <li className="mr-2">
                                 <Link
                                   href="whishlist.html"
-                                  className="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange"
+                                  className="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-[#435c7f] transition-all px-4 md:px-5 py-3 leading-none hover:border-orange"
                                   aria-label="Add to wishlist"
                                   data-tippy-content="Add to wishlist"
                                 >
@@ -218,7 +252,7 @@ const ShopGrid = () => {
                               <li className="mr-2">
                                 <Link
                                   href="#modal-addto-cart"
-                                  className="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange modal-toggle"
+                                  className="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-[#435c7f] transition-all px-4 md:px-5 py-3 leading-none hover:border-orange modal-toggle"
                                   aria-label="Add to cart"
                                   data-tippy-content="Add to cart"
                                   onClick={openAddToCart}
@@ -232,7 +266,7 @@ const ShopGrid = () => {
                               <li className="mr-2">
                                 <Link
                                   href="compare.html"
-                                  className="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange"
+                                  className="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-[#435c7f] transition-all px-4 md:px-5 py-3 leading-none hover:border-orange"
                                   aria-label="Compare"
                                   data-tippy-content="Compare"
                                 >
@@ -251,7 +285,7 @@ const ShopGrid = () => {
                   <ul className="pagination flex flex-wrap items-center justify-center">
                     <li className="mx-2">
                       <Link
-                        className="flex flex-wrap items-center justify-center  w-11 h-11 bg-white shadow text-orange leading-none transition-all hover:bg-orange hover:text-white"
+                        className="flex flex-wrap items-center justify-center  w-11 h-11 bg-white shadow text-[#435c7f] leading-none transition-all hover:bg hover:text-white"
                         href="#"
                       >
                         <i className="icon-arrow-left"></i>
@@ -260,7 +294,7 @@ const ShopGrid = () => {
 
                     <li className="mx-2">
                       <Link
-                        className="flex flex-wrap items-center justify-center  w-11 h-11 bg-white shadow text-orange leading-none transition-all hover:bg-orange hover:text-white active"
+                        className="flex flex-wrap items-center justify-center  w-11 h-11  shadow  leading-none transition-all hover:bg-[#435c7f] hover:text-white bg-[#435c7f] text-white"
                         href="#"
                       >
                         1
@@ -268,7 +302,7 @@ const ShopGrid = () => {
                     </li>
                     <li className="mx-2">
                       <Link
-                        className="flex flex-wrap items-center justify-center  w-11 h-11 bg-white shadow text-orange leading-none transition-all hover:bg-orange hover:text-white"
+                        className="flex flex-wrap items-center justify-center  w-11 h-11 bg-white shadow text-[#435c7f] leading-none transition-all hover:bg-[#435c7f] hover:text-white"
                         href="#"
                       >
                         2
@@ -276,7 +310,7 @@ const ShopGrid = () => {
                     </li>
                     <li className="mx-2">
                       <Link
-                        className="flex flex-wrap items-center justify-center  w-11 h-11 bg-white shadow text-orange leading-none transition-all hover:bg-orange hover:text-white"
+                        className="flex flex-wrap items-center justify-center  w-11 h-11 bg-white shadow text-[#435c7f] leading-none transition-all hover:bg-[#435c7f] hover:text-white"
                         href="#"
                       >
                         3
@@ -284,7 +318,7 @@ const ShopGrid = () => {
                     </li>
                     <li className="mx-2">
                       <Link
-                        className="flex flex-wrap items-center justify-center  w-11 h-11 bg-white shadow text-orange leading-none transition-all hover:bg-orange hover:text-white"
+                        className="flex flex-wrap items-center justify-center  w-11 h-11 bg-white shadow text-[#435c7f] leading-none transition-all hover:bg-[#435c7f] hover:text-white"
                         href="#"
                       >
                         <i className="icon-arrow-right"></i>
@@ -299,15 +333,22 @@ const ShopGrid = () => {
       </div>
       {/* Modal Quick View */}
       {/* <!-- modal-overlay start --> */}
-      <div className={`modal-overlay ${isQuickViewOpen||isAddToCartOpen?"block":"hidden"} fixed inset-0 bg-black opacity-50 z-10`} onClick={() => {
+      <div
+        className={`modal-overlay ${
+          isQuickViewOpen || isAddToCartOpen ? "block" : "hidden"
+        } fixed inset-0 bg-black opacity-50 z-10`}
+        onClick={() => {
           closeAddToCart();
           closeQuickView();
-        }}></div>
+        }}
+      ></div>
       {/* <!-- modal-overlay end --> */}
       {/* <!-- modal-mobile-menu start --> */}
       <div
         id="modal-cart"
-        className={`modal fixed opacity-0 transition-opacity duration-300 ease-linear md:w-11/12 md:max-w-1000 hidden z-40 left-8 right-8 md:left-1/2 top-1/2 transform -translate-y-1/2 md:-translate-x-1/2 p-7 bg-white ${isQuickViewOpen?"modal-open":""}`}
+        className={`modal fixed opacity-0 transition-opacity duration-300 ease-linear md:w-11/12 md:max-w-1000 hidden z-40 left-8 right-8 md:left-1/2 top-1/2 transform -translate-y-1/2 md:-translate-x-1/2 p-7 bg-white ${
+          isQuickViewOpen ? "modal-open" : ""
+        }`}
       >
         <div className="grid md:grid-cols-2 gap-4">
           <div className="w-full">
@@ -321,7 +362,10 @@ const ShopGrid = () => {
             />
           </div>
           <div>
-            <button className="text-black text-lg absolute top-7 right-7 modal-close" onClick={closeQuickView}>
+            <button
+              className="text-black text-lg absolute top-7 right-7 modal-close"
+              onClick={closeQuickView}
+            >
               <i className="icon-close"></i>
             </button>
 
@@ -388,32 +432,57 @@ const ShopGrid = () => {
       </div>
       {/* <!-- modal-mobile-menu end --> */}
 
-
       {/* Modal Add to cart */}
       {/* <!-- modal-overlay start --> */}
 
-{/* <!-- modal-overlay end --> */}
-{/* <!-- modal-mobile-menu start --> */}
-<div id="modal-addto-cart" className={`modal fixed opacity-0 transition-opacity duration-300 ease-linear md:w-11/12 md:max-w-1000 hidden z-50 left-8 right-8 md:left-1/2 top-1/2 transform -translate-y-1/2 md:-translate-x-1/2 p-7 bg-white mx-auto ${isAddToCartOpen?"modal-open":""}`}>
-
-
-<div className="md:flex md:flex-wrap">
-    <div className="md:mr-5 md:flex-30 mb-5 md:mb-0">
-       <Image className="w-full" src="/images/products/lg/product1.webp" alt="product image" loading="lazy" width="432" height="480" />
-    </div>
-    <div className="md:flex-auto">
-        <button className="text-black text-lg absolute top-7 right-7 modal-close"><i className="icon-close" onClick={closeAddToCart}></i></button>
-        <h3 className="text-dark font-medium text-md sm:text-lg mb-4">Airpod product kiebd</h3>
-        <p className="text-dark text-sm flex flex-wrap items-center"><i className="icon-check text-lg mr-5"></i> Added to cart successfully!</p>
-        <div className="mt-8">
-            <a href="#" className="bg-black leading-none py-2 px-5 font-normal text-sm text-white transition-all hover:bg-orange mr-5">View Cart</a>
-            <a href="#" className="bg-black leading-none py-2 px-5 font-normal text-sm text-white transition-all hover:bg-orange">Checkout</a>
+      {/* <!-- modal-overlay end --> */}
+      {/* <!-- modal-mobile-menu start --> */}
+      <div
+        id="modal-addto-cart"
+        className={`modal fixed opacity-0 transition-opacity duration-300 ease-linear md:w-11/12 md:max-w-1000 hidden z-50 left-8 right-8 md:left-1/2 top-1/2 transform -translate-y-1/2 md:-translate-x-1/2 p-7 bg-white mx-auto ${
+          isAddToCartOpen ? "modal-open" : ""
+        }`}
+      >
+        <div className="md:flex md:flex-wrap">
+          <div className="md:mr-5 md:flex-30 mb-5 md:mb-0">
+            <Image
+              className="w-full"
+              src="/images/products/lg/product1.webp"
+              alt="product image"
+              loading="lazy"
+              width="432"
+              height="480"
+            />
+          </div>
+          <div className="md:flex-auto">
+            <button className="text-black text-lg absolute top-7 right-7 modal-close">
+              <i className="icon-close" onClick={closeAddToCart}></i>
+            </button>
+            <h3 className="text-dark font-medium text-md sm:text-lg mb-4">
+              Airpod product kiebd
+            </h3>
+            <p className="text-dark text-sm flex flex-wrap items-center">
+              <i className="icon-check text-lg mr-5"></i> Added to cart
+              successfully!
+            </p>
+            <div className="mt-8">
+              <a
+                href="#"
+                className="bg-black leading-none py-2 px-5 font-normal text-sm text-white transition-all hover:bg-orange mr-5"
+              >
+                View Cart
+              </a>
+              <a
+                href="#"
+                className="bg-black leading-none py-2 px-5 font-normal text-sm text-white transition-all hover:bg-orange"
+              >
+                Checkout
+              </a>
+            </div>
+          </div>
         </div>
-    </div>
-  </div>
-
-</div>
-{/* <!-- modal-mobile-menu end --> */}
+      </div>
+      {/* <!-- modal-mobile-menu end --> */}
     </>
   );
 };

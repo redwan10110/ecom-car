@@ -5,7 +5,7 @@ const Register = () => {
   return (
     <>
       {/* Breadcrumb section start */}
-      <div className="py-9 bg-gray-light">
+      <div className="py-5 bg-gray-light" style={{ backgroundImage: "url('/images/GreyBar.png')",backgroundPosition: "center", }}>
         <div className="container">
           <div className="grid grid-cols-12 gap-x-4">
             <div className="col-span-12">
@@ -14,7 +14,7 @@ const Register = () => {
                   <li className="mr-5">
                     <Link
                       href="index.html"
-                      className="text-dark font-medium text-base uppercase transition-all hover:text-orange relative before:w-5 before:h-1px before:empty before:absolute before:top-3 before:bg-dark before:transform before:rotate-115 before:-right-5"
+                      className="text-dark font-medium text-base uppercase transition-all hover:text-[#435c7f] relative before:w-5 before:h-1px before:empty before:absolute before:top-3 before:bg-dark before:transform before:rotate-115 before:-right-5"
                     >
                       Home
                     </Link>
@@ -38,7 +38,7 @@ const Register = () => {
                 <ul className="custom-tab-nav flex flex-wrap items-center justify-center mb-10">
                   <li className="mx-2">
                     <Link
-                      className="font-semibold py-3 px-5 leading-none uppercase transition-all hover:text-orange  text-base md:text-md"
+                      className="font-semibold py-3 px-5 leading-none uppercase transition-all hover:text-[#435c7f]  text-base md:text-md"
                       href="/login"
                     >
                       login
@@ -47,7 +47,7 @@ const Register = () => {
                   </li>
                   <li className="mx-2">
                     <Link
-                      className="font-semibold py-3 px-5 leading-none uppercase transition-all text-orange  text-base md:text-md"
+                      className="font-semibold py-3 px-5 leading-none uppercase transition-all text-[#435c7f]  text-base md:text-md"
                       href="/register"
                     >
                       register
@@ -80,7 +80,7 @@ const Register = () => {
                         <div className="button-box">
                           <Link
                             href="#"
-                            className="inline-block leading-none uppercase text-white text-sm bg-dark px-5 py-4 transition-all hover:bg-orange"
+                            className="inline-block leading-none uppercase text-white text-sm bg-gray-800 px-5 py-4 transition-all hover:bg-[#435c7f]"
                           >
                             <span>Register</span>
                           </Link>

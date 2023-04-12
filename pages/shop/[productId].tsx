@@ -8,7 +8,7 @@ const ProductId = () => {
   return (
     <>
       <Layout>
-        <div className="mt-[100px]">
+        <div className="mt-[60px]">
           <ProductsDetails></ProductsDetails>
         </div>
       </Layout>

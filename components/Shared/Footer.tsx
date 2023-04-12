@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import paymentLogo from "../../public/images/logo/payment.webp";
-import logo from "../../public/images/logo/logo.webp";
+import logo from "../../public/images/logo/Logo_TidyTrunk.png";
 
 const Footer = () => {
   return (
@@ -40,7 +40,7 @@ const Footer = () => {
                 <button
                   id="mc-submit"
                   type="submit"
-                  className="bg-black transition-all hover:bg-orange hover:text-white px-10 sm:px-3 py-5 sm:py-1 rounded-l-full sm:rounded-l-none rounded-r-full text-white capitalize font-medium text-sm lg:text-md sm:absolute sm:top-0 sm:right-0 sm:h-full mt-3 sm:mt-0 leading-none w-full sm:w-auto"
+                  className="bg-black transition-all hover:bg-[#435c7f] hover:text-white px-10 sm:px-3 py-5 sm:py-1 rounded-l-full sm:rounded-l-none rounded-r-full text-white capitalize font-medium text-sm lg:text-md sm:absolute sm:top-0 sm:right-0 sm:h-full mt-3 sm:mt-0 leading-none w-full sm:w-auto"
                 >
                   Subscribe
                 </button>

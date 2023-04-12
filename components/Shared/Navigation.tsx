@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "../../public/images/logo/logo.webp";
+import logo from "../../public/images/logo/Logo_TidyTrunk.png";
 import megaMenuImg from "../../public/images/mega-menu/megamenu.webp";
 
 import Link from "next/link";
@@ -37,7 +37,7 @@ const Navigation = () => {
   return (
     <>
       <header id="sticky-header" className="is-sticky">
-        <div className="px-4 md:px-10 2xl:px-24 py-6 lg:py-0">
+        <div className="px-4 md:px-10 2xl:px-24 py-6 lg:py-0 bg-dark">
           <div className="flex items-center lg:relative">
             <div className="w-6/12 lg:w-2/12">
               {/* Logo */}
@@ -59,7 +59,7 @@ const Navigation = () => {
                 <ul className="flex flex-wrap">
                   <li className="main-menu__item relative group">
                     <Link
-                      className="block py-10 xl:pr-6 md:pr-5 capitalize font-normal text-md text-primary hover:text-orange transition-all nav-item"
+                      className="block py-10 xl:pr-6 md:pr-5 capitalize font-normal text-md text-white hover:text-[#435c7f] transition-all nav-item"
                       href="/"
                     >
                       Home
@@ -68,7 +68,7 @@ const Navigation = () => {
 
                   <li className="main-menu__item group">
                     <Link
-                      className="block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-primary hover:text-orange transition-all nav-item"
+                      className="block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-white hover:text-[#435c7f] transition-all nav-item"
                       href="/shop"
                     >
                       Shop
@@ -76,7 +76,7 @@ const Navigation = () => {
                   </li>
                   <li className="main-menu__item relative group">
                     <Link
-                      className="block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-primary hover:text-orange transition-all nav-item"
+                      className="block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-white hover:text-[#435c7f] transition-all nav-item"
                       href="#"
                     >
                       pages
@@ -143,7 +143,7 @@ const Navigation = () => {
               <ul className="flex items-center justify-end">
                 <li className="ml-6 hidden lg:block">
                   <button
-                    className="search-toggle text-right text-primary text-md hover:text-orange transition-all"
+                    className="search-toggle text-right text-white text-md hover:text-[#435c7f] transition-all"
                     aria-label="icon-settings"
                     onClick={openSearch}
                   >
@@ -153,20 +153,20 @@ const Navigation = () => {
                 <li className="ml-6" onClick={openCart}>
                   <Link
                     href="#offcanvas-cart"
-                    className="text-primary text-md hover:text-orange transition-all relative offcanvas-toggle"
+                    className="text-white text-md hover:text-[#435c7f] transition-all relative offcanvas-toggle"
                   >
                     <span className="w-5 h-5 bg-dark text-white text-sm rounded-full font-normal flex flex-wrap items-center justify-center absolute -top-3 left-2 leading-none">
                       4
                     </span>
                     <i className="icon-bag"></i>
-                    <span className="text-base leading-none text-dark ml-2">
+                    <span className="text-base leading-none text-white ml-2">
                       $245
                     </span>
                   </Link>
                 </li>
                 <li id="toggle-menu" className="ml-6 hidden lg:block relative">
                   <button
-                    className="text-primary text-md hover:text-orange transition-all toggle-menu"
+                    className="text-white text-md hover:text-[#435c7f] transition-all toggle-menu"
                     aria-label="icon-settings"
                   >
                     <i className="icon-settings"></i>

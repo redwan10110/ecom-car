@@ -1,5 +1,6 @@
 import AboutUsCom from "@/components/AboutUs/AboutUsCom";
 import Layout from "@/components/Layout/Layout";
+import ScrollTop from "@/components/Shared/ScrollTop";
 
 
 const aboutUs = () => {
@@ -10,6 +11,7 @@ const aboutUs = () => {
           <AboutUsCom></AboutUsCom>
         </div>
       </Layout>
+
     </>
   );
 };

@@ -10,16 +10,19 @@ import "swiper/css";
 const ProductsDetails = () => {
   return (
     <>
+      <div className="py-5 text-center" style={{ backgroundImage: "url('/images/GreyBar.png')",backgroundPosition: "center", }}>Single Product</div>
+
+      
       <div className="py-24">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
             <div>
               <div className="relative overflow-hidden">
-                <span className="font-semibold uppercase text-sm text-white inline-block py-1 px-2 leading-none absolute top-3  z-10 right-3 bg-orange">
+                <span className="font-semibold uppercase text-sm text-red-500 inline-block py-1 px-2 leading-none absolute top-3  z-10 right-3 ">
                   Sale
                 </span>
 
-                <Swiper className="mySwiper mb-[30px]" >
+                <Swiper className="mySwiper mb-[30px]">
                   <SwiperSlide>
                     <Image
                       width={559}
@@ -135,18 +138,12 @@ const ProductsDetails = () => {
               <h3 className="font-medium text-lg capitalize">
                 Airp Variable product
               </h3>
-              <h5 className="font-bold text-md leading-none text-orange my-3">
+              <h5 className="font-bold text-md leading-none text-[#435c7f] my-3">
                 <del className="font-normal text-sm mr-1 inline-block">
                   $110.00
                 </del>
                 $130.00
               </h5>
-              <div className="mb-3">
-                Vendor:<span> Vendor 3 </span>
-              </div>
-              <div className="mb-3">
-                Type: <span> Type 3 </span>
-              </div>
               <div className="mb-3">
                 <span>Availability:</span>{" "}
                 <span className="font-semibold">9 left in stock</span>
@@ -161,160 +158,6 @@ const ProductsDetails = () => {
               </p>
 
               <div>
-                <div className="flex flex-wrap items-center mb-6">
-                  <span className="mr-8">Size:</span>
-                  <form className="size-swatch" action="#">
-                    <ul className="flex flex-wrap">
-                      <li className="mx-1">
-                        <input
-                          className="hidden opacity-0"
-                          type="radio"
-                          name="radio-group"
-                          id="size1"
-                        />
-                        <label
-                          className="py-2 px-2 leading-none text-sm flex items-center justify-center transition-all bg-gray-300 cursor-pointer capitalize"
-                          htmlFor="size1"
-                        >
-                          s
-                        </label>
-                      </li>
-
-                      <li className="mx-1">
-                        <input
-                          className="hidden opacity-0"
-                          type="radio"
-                          name="radio-group"
-                          id="size2"
-                          checked
-                        />
-                        <label
-                          className="py-2 px-2 leading-none text-sm flex items-center justify-center transition-all bg-gray-300 cursor-pointer capitalize"
-                          htmlFor="size2"
-                        >
-                          m
-                        </label>
-                      </li>
-                      <li className="mx-1">
-                        <input
-                          className="hidden opacity-0"
-                          type="radio"
-                          name="radio-group"
-                          id="size3"
-                        />
-                        <label
-                          className="py-2 px-2 leading-none text-sm flex items-center justify-center transition-all bg-gray-300 cursor-pointer capitalize"
-                          htmlFor="size3"
-                        >
-                          l
-                        </label>
-                      </li>
-
-                      <li className="mx-1">
-                        <input
-                          className="hidden opacity-0"
-                          type="radio"
-                          name="radio-group"
-                          id="size4"
-                        />
-                        <label
-                          className="py-2 px-2 leading-none text-sm flex items-center justify-center transition-all bg-gray-300 cursor-pointer capitalize"
-                          htmlFor="size4"
-                        >
-                          xl
-                        </label>
-                      </li>
-
-                      <li className="mx-1">
-                        <input
-                          className="hidden opacity-0"
-                          type="radio"
-                          name="radio-group"
-                          id="size5"
-                        />
-                        <label
-                          className="py-2 px-2 leading-none text-sm flex items-center justify-center transition-all bg-gray-300 cursor-pointer capitalize"
-                          htmlFor="size5"
-                        >
-                          xxl
-                        </label>
-                      </li>
-                    </ul>
-                  </form>
-                </div>
-
-                <div className="flex flex-wrap items-center  mb-6">
-                  <span className="mr-6">Color:</span>
-                  <form action="#" className="colors-swatch">
-                    <ul className="flex flex-wrap">
-                      <li className="mx-1">
-                        <input
-                          className="hidden opacity-0"
-                          type="radio"
-                          checked
-                          name="radio-group"
-                          id="color1"
-                        />
-                        <label
-                          htmlFor="color1"
-                          className="w-7 h-7 rounded-full text-sm flex items-center justify-center transition-all relative bg-indigo-800 cursor-pointer capitalize"
-                        ></label>
-                      </li>
-
-                      <li className="mx-1">
-                        <input
-                          className="hidden opacity-0"
-                          type="radio"
-                          name="radio-group"
-                          id="color2"
-                        />
-                        <label
-                          htmlFor="color2"
-                          className="w-7 h-7 rounded-full text-sm flex items-center justify-center transition-all relative bg-pink-600 cursor-pointer capitalize"
-                        ></label>
-                      </li>
-                      <li className="mx-1">
-                        <input
-                          className="hidden opacity-0"
-                          type="radio"
-                          name="radio-group"
-                          id="color3"
-                        />
-                        <label
-                          htmlFor="color3"
-                          className="w-7 h-7 rounded-full text-sm flex items-center justify-center transition-all relative bg-red-600 cursor-pointer capitalize"
-                        ></label>
-                      </li>
-
-                      <li className="mx-1">
-                        <input
-                          className="hidden opacity-0"
-                          type="radio"
-                          name="radio-group"
-                          id="color4"
-                        />
-                        <label
-                          htmlFor="color4"
-                          className="w-7 h-7 rounded-full text-sm flex items-center justify-center transition-all relative bg-green-500 cursor-pointer capitalize"
-                        ></label>
-                      </li>
-
-                      <li className="mx-1">
-                        <input
-                          className="hidden opacity-0"
-                          type="radio"
-                          name="radio-group"
-                          id="color5"
-                        />
-                        <label
-                          htmlFor="color5"
-                          className="w-7 h-7 rounded-full text-sm flex items-center justify-center transition-all relative bg-yellow-500 cursor-pointer capitalize"
-                        ></label>
-                      </li>
-                    </ul>
-                  </form>
-                </div>
-
                 <div className="mb-8">
                   <div className="flex flex-wrap items-center mt-8">
                     <div className="flex count border border-solid border-gray-300 p-2 h-11">
