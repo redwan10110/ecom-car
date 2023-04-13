@@ -5,7 +5,7 @@ const Cart = () => {
   return (
     <>
       <Layout>
-        <div className="mt-[70px]">
+        <div className="lg:mt-[70px] mt-[80px]">
           <CartComp></CartComp>
         </div>
       </Layout>

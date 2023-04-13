@@ -10,7 +10,28 @@ import "swiper/css";
 const ProductsDetails = () => {
   return (
     <>
-      <div className="py-5 text-center" style={{ backgroundImage: "url('/images/GreyBar.png')",backgroundPosition: "center", }}>Single Product</div>
+      {/* Breadcrumb section start */}
+      <div
+        className="py-0 "
+        style={{
+          backgroundImage: "url('/images/GreyBar.png')",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="container">
+          <div className="grid grid-cols-12 gap-x-4">
+            <div className="col-span-12">
+              <nav>
+              <h2 className="ml-0 lg:ml-[160px] lg:text-[30px] text-[25px] mb-[-10px]">
+                  PRODUCT DETAILS
+                </h2>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Breadcrumb section end */}
 
       
       <div className="py-24">
@@ -183,7 +204,7 @@ const ProductsDetails = () => {
                       </button>
                     </div>
                     <div className="ml-2 sm:ml-8">
-                      <button className="bg-black leading-none py-4 px-5 md:px-8 font-normal text-sm h-11 text-white transition-all hover:bg-orange">
+                      <button className="bg-black leading-none py-4 px-5 md:px-8 font-normal text-sm h-11 text-white transition-all hover:bg-[#435c7f]">
                         Add to Cart
                       </button>
                     </div>

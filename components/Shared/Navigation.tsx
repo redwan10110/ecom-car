@@ -37,7 +37,7 @@ const Navigation = () => {
   return (
     <>
       <header id="sticky-header" className="is-sticky">
-        <div className="px-4 md:px-10 2xl:px-24 py-6 lg:py-0 bg-dark">
+        <div className="px-4 md:px-10 2xl:px-24 py-6 lg:py-0 bg-light">
           <div className="flex items-center lg:relative">
             <div className="w-6/12 lg:w-2/12">
               {/* Logo */}
@@ -59,7 +59,7 @@ const Navigation = () => {
                 <ul className="flex flex-wrap">
                   <li className="main-menu__item relative group">
                     <Link
-                      className="block py-10 xl:pr-6 md:pr-5 capitalize font-normal text-md text-white hover:text-[#435c7f] transition-all nav-item"
+                      className="block py-10 xl:pr-6 md:pr-5 capitalize font-normal text-md text-dark hover:text-[#435c7f] transition-all nav-item"
                       href="/"
                     >
                       Home
@@ -68,7 +68,7 @@ const Navigation = () => {
 
                   <li className="main-menu__item group">
                     <Link
-                      className="block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-white hover:text-[#435c7f] transition-all nav-item"
+                      className="block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-dark hover:text-[#435c7f] transition-all nav-item"
                       href="/shop"
                     >
                       Shop
@@ -76,7 +76,7 @@ const Navigation = () => {
                   </li>
                   <li className="main-menu__item relative group">
                     <Link
-                      className="block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-white hover:text-[#435c7f] transition-all nav-item"
+                      className="block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-dark hover:text-[#435c7f] transition-all nav-item"
                       href="#"
                     >
                       pages
@@ -84,7 +84,7 @@ const Navigation = () => {
                     <ul className="submenu bg-white py-3 px-8 shadow transition-all absolute left-0 top-full opacity-0 group-hover:opacity-100 invisible group-hover:visible group-hover:-translate-y-3 transform z-10 min-w-max">
                       <li className="my-3">
                         <Link
-                          className="text-dark font-normal text-base capitalize transition-all hover:text-orange"
+                          className="text-dark font-normal text-base capitalize transition-all hover:text-[#435c7f]"
                           href="/about-us"
                         >
                           About Page
@@ -92,7 +92,7 @@ const Navigation = () => {
                       </li>
                       <li className="my-3">
                         <Link
-                          className="text-dark font-normal text-base capitalize transition-all hover:text-orange"
+                          className="text-dark font-normal text-base capitalize transition-all hover:text-[#435c7f]"
                           href="/cart"
                         >
                           Cart Page
@@ -100,16 +100,16 @@ const Navigation = () => {
                       </li>
                       <li className="my-3">
                         <Link
-                          className="text-dark font-normal text-base capitalize transition-all hover:text-orange"
+                          className="text-dark font-normal text-base capitalize transition-all hover:text-[#435c7f]"
                           href="/checkout"
                         >
                           Checkout Page
                         </Link>
                       </li>
-                      
+
                       <li className="my-3">
                         <Link
-                          className="text-dark font-normal text-base capitalize transition-all hover:text-orange"
+                          className="text-dark font-normal text-base capitalize transition-all hover:text-[#435c7f]"
                           href="/login"
                         >
                           Login
@@ -117,7 +117,7 @@ const Navigation = () => {
                       </li>
                       <li className="my-3">
                         <Link
-                          className="text-dark font-normal text-base capitalize transition-all hover:text-orange"
+                          className="text-dark font-normal text-base capitalize transition-all hover:text-[#435c7f]"
                           href="/register"
                         >
                           Register
@@ -125,16 +125,14 @@ const Navigation = () => {
                       </li>
                       <li className="my-3">
                         <Link
-                          className="text-dark font-normal text-base capitalize transition-all hover:text-orange"
-                          href="dashboard/"
+                          className="text-dark font-normal text-base capitalize transition-all hover:text-[#435c7f]"
+                          href="/dashboard/account"
                         >
                           Account Page
                         </Link>
                       </li>
-                      
                     </ul>
                   </li>
-                  
                 </ul>
               </nav>
             </div>
@@ -143,7 +141,7 @@ const Navigation = () => {
               <ul className="flex items-center justify-end">
                 <li className="ml-6 hidden lg:block">
                   <button
-                    className="search-toggle text-right text-white text-md hover:text-[#435c7f] transition-all"
+                    className="search-toggle text-right text-dark text-md hover:text-[#435c7f] transition-all"
                     aria-label="icon-settings"
                     onClick={openSearch}
                   >
@@ -153,27 +151,27 @@ const Navigation = () => {
                 <li className="ml-6" onClick={openCart}>
                   <Link
                     href="#offcanvas-cart"
-                    className="text-white text-md hover:text-[#435c7f] transition-all relative offcanvas-toggle"
+                    className="text-dark text-md hover:text-[#435c7f] transition-all relative offcanvas-toggle"
                   >
                     <span className="w-5 h-5 bg-dark text-white text-sm rounded-full font-normal flex flex-wrap items-center justify-center absolute -top-3 left-2 leading-none">
                       4
                     </span>
                     <i className="icon-bag"></i>
-                    <span className="text-base leading-none text-white ml-2">
+                    <span className="text-base leading-none text-dark ml-2">
                       $245
                     </span>
                   </Link>
                 </li>
                 <li id="toggle-menu" className="ml-6 hidden lg:block relative">
                   <button
-                    className="text-white text-md hover:text-[#435c7f] transition-all toggle-menu"
+                    className="text-dark text-md hover:text-[#435c7f] transition-all toggle-menu"
                     aria-label="icon-settings"
                   >
                     <i className="icon-settings"></i>
                   </button>
                   <div
                     id="settings-card"
-                    className="bg-white absolute right-0 px-8 py-5 shadow w-80 opacity-0 invisible transition-all duration-300 ease-in-out z-20"
+                    className="text-dark absolute right-0 px-8 py-5 shadow w-80 opacity-0 invisible transition-all duration-300 ease-in-out z-20"
                   >
                     <h4 className="text-md text-dark font-normal capitalize tracking-wide pb-5 border-b border-solid border-gray-600 mb-5">
                       Currency
@@ -273,7 +271,9 @@ const Navigation = () => {
       </div>
       {/* <!-- offcanvas-overlay start --> */}
       <div
-        className={`offcanvas-overlay ${isCartOpen ||isMobileMenuOpen ? "block" : "hidden"} fixed inset-0 bg-black opacity-50 z-50`}
+        className={`offcanvas-overlay ${
+          isCartOpen || isMobileMenuOpen ? "block" : "hidden"
+        } fixed inset-0 bg-black opacity-50 z-50`}
         onClick={() => {
           closeCart();
           closeMobileMenu();
@@ -347,9 +347,49 @@ const Navigation = () => {
               <li className="relative block">
                 <Link
                   href="/about-us"
-                  className="relative block capitalize font-normal text-base my-2 py-1 font-roboto"
+                  className="block capitalize font-normal text-base my-2 py-1 font-roboto"
                 >
-                  about Us
+                  About Page
+                </Link>
+              </li>
+              <li className="relative block">
+                <Link
+                  href="/cart"
+                  className="block capitalize font-normal text-base my-2 py-1 font-roboto"
+                >
+                  Cart Page
+                </Link>
+              </li>
+              <li className="relative block">
+                <Link
+                  href="/checkout"
+                  className="block capitalize font-normal text-base my-2 py-1 font-roboto"
+                >
+                  Checkout Page
+                </Link>
+              </li>
+              <li className="relative block">
+                <Link
+                  href="/login"
+                  className="block capitalize font-normal text-base my-2 py-1 font-roboto"
+                >
+                  Login
+                </Link>
+              </li>
+              <li className="relative block">
+                <Link
+                  href="/register"
+                  className="block capitalize font-normal text-base my-2 py-1 font-roboto"
+                >
+                  Register
+                </Link>
+              </li>
+              <li className="relative block">
+                <Link
+                  href="/dashboard/account"
+                  className="block capitalize font-normal text-base my-2 py-1 font-roboto"
+                >
+                  Account Page
                 </Link>
               </li>
               

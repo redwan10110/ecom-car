@@ -4,24 +4,20 @@ const CheckOutCom = () => {
   return (
     <>
       {/* Breadcrumb section start */}
-      <div className="py-5 " style={{ backgroundImage: "url('/images/GreyBar.png')",backgroundPosition: "center", }}>
+      <div
+        className="py-0"
+        style={{
+          backgroundImage: "url('/images/GreyBar.png')",
+          backgroundPosition: "center",
+        }}
+      >
         <div className="container">
           <div className="grid grid-cols-12 gap-x-4">
             <div className="col-span-12">
               <nav>
-                <ul className="flex flex-wrap items-center justify-center">
-                  <li className="mr-5">
-                    <Link
-                      href="index.html"
-                      className="text-dark font-medium text-base uppercase transition-all hover:text-[#435c7f] relative before:w-5 before:h-1px before:empty before:absolute before:top-3 before:bg-dark before:transform before:rotate-115 before:-right-5"
-                    >
-                      Home
-                    </Link>
-                  </li>
-                  <li className="text-dark font-medium text-base uppercase mr-5">
-                    Checkout page
-                  </li>
-                </ul>
+                <h2 className="ml-0 lg:ml-[160px] lg:text-[30px] text-[25px] mb-[-10px]">
+                  CHECKOUT
+                </h2>
               </nav>
             </div>
           </div>
@@ -61,7 +57,9 @@ const CheckOutCom = () => {
                     </div>
                     <div className="lg:col-span-2">
                       <div>
-                        <label className="mb-3 inline-block">Company Name</label>
+                        <label className="mb-3 inline-block">
+                          Company Name
+                        </label>
                         <input
                           className="border border-solid border-gray-300 w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base"
                           type="text"
@@ -83,7 +81,9 @@ const CheckOutCom = () => {
                     </div>
                     <div className="lg:col-span-2">
                       <div>
-                        <label className="mb-3 inline-block">Street Address</label>
+                        <label className="mb-3 inline-block">
+                          Street Address
+                        </label>
                         <input
                           className="border border-solid border-gray-300 w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base"
                           placeholder="House number and street name"
@@ -107,7 +107,9 @@ const CheckOutCom = () => {
                     </div>
                     <div>
                       <div>
-                        <label className="mb-3 inline-block">State / County</label>
+                        <label className="mb-3 inline-block">
+                          State / County
+                        </label>
                         <input
                           className="border border-solid border-gray-300 w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base"
                           type="text"
@@ -116,7 +118,9 @@ const CheckOutCom = () => {
                     </div>
                     <div>
                       <div>
-                        <label className="mb-3 inline-block">Postcode / ZIP</label>
+                        <label className="mb-3 inline-block">
+                          Postcode / ZIP
+                        </label>
                         <input
                           className="border border-solid border-gray-300 w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base"
                           type="text"
@@ -134,7 +138,9 @@ const CheckOutCom = () => {
                     </div>
                     <div>
                       <div>
-                        <label className="mb-3 inline-block">Email Address</label>
+                        <label className="mb-3 inline-block">
+                          Email Address
+                        </label>
                         <input
                           className="border border-solid border-gray-300 w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base"
                           type="text"
@@ -145,7 +151,11 @@ const CheckOutCom = () => {
                 </form>
 
                 <div className="checkout-account mb-5">
-                  <input id="id2" className="checkout-toggle2" type="checkbox" />
+                  <input
+                    id="id2"
+                    className="checkout-toggle2"
+                    type="checkbox"
+                  />
                   <label htmlFor="id2">Create an account?</label>
                 </div>
                 <div className="checkout-account-toggle open-toggle2 mb-30 hidden">
@@ -181,7 +191,11 @@ const CheckOutCom = () => {
                   </div>
                 </div>
                 <div className="checkout-account mt-25">
-                  <input id="ship" className="checkout-toggle" type="checkbox" />
+                  <input
+                    id="ship"
+                    className="checkout-toggle"
+                    type="checkbox"
+                  />
                   <label htmlFor="ship">Ship to a different address?</label>
                 </div>
                 <div className="different-address open-toggle mt-5 hidden">
@@ -206,7 +220,9 @@ const CheckOutCom = () => {
                     </div>
                     <div className="lg:col-span-2">
                       <div>
-                        <label className="mb-3 inline-block">Company Name</label>
+                        <label className="mb-3 inline-block">
+                          Company Name
+                        </label>
                         <input
                           className="border border-solid border-gray-300 w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base"
                           type="text"
@@ -228,7 +244,9 @@ const CheckOutCom = () => {
                     </div>
                     <div className="lg:col-span-2">
                       <div>
-                        <label className="mb-3 inline-block">Street Address</label>
+                        <label className="mb-3 inline-block">
+                          Street Address
+                        </label>
                         <input
                           className="border border-solid border-gray-300 w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base"
                           placeholder="House number and street name"
@@ -252,7 +270,9 @@ const CheckOutCom = () => {
                     </div>
                     <div>
                       <div>
-                        <label className="mb-3 inline-block">State / County</label>
+                        <label className="mb-3 inline-block">
+                          State / County
+                        </label>
                         <input
                           className="border border-solid border-gray-300 w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base"
                           type="text"
@@ -261,7 +281,9 @@ const CheckOutCom = () => {
                     </div>
                     <div>
                       <div>
-                        <label className="mb-3 inline-block">Postcode / ZIP</label>
+                        <label className="mb-3 inline-block">
+                          Postcode / ZIP
+                        </label>
                         <input
                           className="border border-solid border-gray-300 w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base"
                           type="text"
@@ -279,7 +301,9 @@ const CheckOutCom = () => {
                     </div>
                     <div>
                       <div>
-                        <label className="mb-3 inline-block">Email Address</label>
+                        <label className="mb-3 inline-block">
+                          Email Address
+                        </label>
                         <input
                           className="border border-solid border-gray-300 w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base"
                           type="text"

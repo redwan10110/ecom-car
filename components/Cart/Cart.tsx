@@ -5,24 +5,14 @@ const Cart = () => {
   return (
     <div>
       {/* <!-- Breadcrumb section start --> */}
-      <div className="py-5 bg-gray-light" style={{ backgroundImage: "url('/images/GreyBar.png')",backgroundPosition: "center", }}>
+      <div className="py-0 bg-gray-light" style={{ backgroundImage: "url('/images/GreyBar.png')",backgroundPosition: "center", }}>
         <div className="container">
           <div className="grid grid-cols-12 gap-x-4">
             <div className="col-span-12">
               <nav>
-                <ul className="flex flex-wrap items-center justify-center">
-                  <li className="mr-5">
-                    <Link
-                      href="/"
-                      className="text-dark font-medium text-base uppercase transition-all hover:text-[#435c7f] relative before:w-5 before:h-1px before:empty before:absolute before:top-3 before:bg-dark before:transform before:rotate-115 before:-right-5"
-                    >
-                      Home
-                    </Link>
-                  </li>
-                  <li className="text-dark font-medium text-base uppercase mr-5">
-                    Your Shopping Cart
-                  </li>
-                </ul>
+              <h2 className="ml-0 lg:ml-[160px] lg:text-[30px] text-[25px] mb-[-10px]">
+                  SHOPPING CART
+                </h2>
               </nav>
             </div>
           </div>
@@ -62,12 +52,15 @@ const Cart = () => {
                   <tr>
                     <td className="w-32 p-3 border border-solid border-gray-600 text-center">
                       <Link href="#">
-                        <Image
+                        {/* <Image
                           width={103}
                           height={115}
                           src="/images/single-product/sm/products10.webp"
                           alt="product image"
-                        />
+                        /> */}
+                        <div className="w-[103px] h-[115px]">
+                            Gray Box is img BG
+                        </div>
                       </Link>
                     </td>
                     <td className="p-3 border border-solid border-gray-600 text-center">

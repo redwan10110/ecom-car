@@ -9,7 +9,7 @@ const Shop = () => {
         <title>Shop</title>
       </Head>
       <Layout>
-        <div className="mt-[60px]">
+        <div className="lg:mt-[70px] mt-[80px]">
           <ShopGrid></ShopGrid>
         </div>
       </Layout>

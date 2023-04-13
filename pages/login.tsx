@@ -5,7 +5,7 @@ const login = () => {
   return (
     <>
       <Layout>
-        <div className="mt-[60px]">
+        <div className="lg:mt-[70px] mt-[80px]">
           <Login></Login>
         </div>
       </Layout>
