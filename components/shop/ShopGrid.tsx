@@ -90,7 +90,7 @@ const ShopGrid = () => {
                   </div>
                   <div>
                     <ul className="shop-tab-nav flex flex-wrap">
-                      <li>
+                      {/* <li>
                         <Link
                           href="#grid"
                           className="text-base hover:text-[#435c7f] inline-block py-2 px-2"
@@ -105,7 +105,7 @@ const ShopGrid = () => {
                         >
                           <i className="icon-menu"></i>
                         </Link>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                 </div>
@@ -154,7 +154,7 @@ const ShopGrid = () => {
 
                             {/* <!-- variants start --> */}
 
-                            <div className="p-2 bg-gray-200 shadow absolute left-2 right-2 -bottom-40 group-hover:bottom-2 z-20 transition-all duration-500 ease-linear">
+                            {/* <div className="p-2 bg-gray-200 shadow absolute left-2 right-2 -bottom-40 group-hover:bottom-2 z-20 transition-all duration-500 ease-linear">
                               <ul className="flex flex-wrap items-center justify-center mb-3">
                                 <li className="mx-1 leading-none">
                                   <button className="text-sm">sm</button>
@@ -198,7 +198,7 @@ const ShopGrid = () => {
                                   ></button>
                                 </li>
                               </ul>
-                            </div>
+                            </div> */}
 
                             {/* <!-- variants end --> */}
                           </div>
@@ -231,7 +231,7 @@ const ShopGrid = () => {
                             </h5>
 
                             <ul className="flex items-center">
-                              <li className="mr-2">
+                              {/* <li className="mr-2">
                                 <Link
                                   href="whishlist.html"
                                   className="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-[#435c7f] transition-all px-4 md:px-5 py-3 leading-none hover:border-orange"
@@ -240,7 +240,7 @@ const ShopGrid = () => {
                                 >
                                   <i className="icon-heart"></i>
                                 </Link>
-                              </li>
+                              </li> */}
                               <li className="mr-2">
                                 <Link
                                   href="#modal-addto-cart"
@@ -255,7 +255,7 @@ const ShopGrid = () => {
                                   </span>
                                 </Link>
                               </li>
-                              <li className="mr-2">
+                              {/* <li className="mr-2">
                                 <Link
                                   href="compare.html"
                                   className="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-[#435c7f] transition-all px-4 md:px-5 py-3 leading-none hover:border-orange"
@@ -264,7 +264,7 @@ const ShopGrid = () => {
                                 >
                                   <i className="icon-refresh"></i>
                                 </Link>
-                              </li>
+                              </li> */}
                             </ul>
                           </div>
                         </div>
@@ -277,7 +277,7 @@ const ShopGrid = () => {
                   <ul className="pagination flex flex-wrap items-center justify-center">
                     <li className="mx-2">
                       <Link
-                        className="flex flex-wrap items-center justify-center  w-11 h-11 bg-white shadow text-[#435c7f] leading-none transition-all hover:bg hover:text-white"
+                        className="flex flex-wrap items-center justify-center  w-11 h-11 bg-white shadow text-[#435c7f] leading-none transition-all hover:bg-[#435c7f] hover:text-white"
                         href="#"
                       >
                         <i className="icon-arrow-left"></i>
@@ -378,7 +378,7 @@ const ShopGrid = () => {
               Internet tend to repeat predefined chunks as necessary,
             </p>
 
-            <select
+            {/* <select
               className="w-full h-12 border border-solid border-gray-300  px-5 py-2 appearance-none"
               style={{
                 background:
@@ -388,7 +388,7 @@ const ShopGrid = () => {
               <option defaultValue="red">red</option>
               <option defaultValue="green">green</option>
               <option defaultValue="blue">blue</option>
-            </select>
+            </select> */}
 
             <div className="flex flex-wrap items-center mt-8">
               <div className="flex count border border-solid border-gray-300 p-2 h-11">
@@ -414,7 +414,7 @@ const ShopGrid = () => {
                 </button>
               </div>
               <div className="ml-2 sm:ml-8">
-                <button className="bg-black leading-none py-4 px-5 md:px-8 font-normal text-sm h-11 text-white transition-all hover:bg-orange">
+                <button className="bg-black leading-none py-4 px-5 md:px-8 font-normal text-sm h-11 text-white transition-all hover:bg-[#435c7f]">
                   Add to Cart
                 </button>
               </div>
@@ -460,13 +460,13 @@ const ShopGrid = () => {
             <div className="mt-8">
               <a
                 href="#"
-                className="bg-black leading-none py-2 px-5 font-normal text-sm text-white transition-all hover:bg-orange mr-5"
+                className="bg-black leading-none py-2 px-5 font-normal text-sm text-white transition-all hover:bg-[#435c7f] mr-5"
               >
                 View Cart
               </a>
               <a
                 href="#"
-                className="bg-black leading-none py-2 px-5 font-normal text-sm text-white transition-all hover:bg-orange"
+                className="bg-black leading-none py-2 px-5 font-normal text-sm text-white transition-all hover:bg-[#435c7f]"
               >
                 Checkout
               </a>

@@ -50,35 +50,35 @@ const Footer = () => {
               <Link
                 href="#"
                 aria-label="social links"
-                className="text-lg text-dark hover:text-orange mx-3 leading-none transition"
+                className="text-lg text-dark hover:text-[#435c7f] mx-3 leading-none transition"
               >
                 <i className="icon-social-facebook"></i>
               </Link>
               <Link
                 href="#"
                 aria-label="social links"
-                className="text-lg text-dark hover:text-orange mx-3 leading-none transition"
+                className="text-lg text-dark hover:text-[#435c7f] mx-3 leading-none transition"
               >
                 <i className="icon-social-twitter"></i>
               </Link>
               <Link
                 href="#"
                 aria-label="social links"
-                className="text-lg text-dark hover:text-orange mx-3 leading-none transition"
+                className="text-lg text-dark hover:text-[#435c7f] mx-3 leading-none transition"
               >
                 <i className="icon-social-instagram"></i>
               </Link>
               <Link
                 href="#"
                 aria-label="social links"
-                className="text-lg text-dark hover:text-orange mx-3 leading-none transition"
+                className="text-lg text-dark hover:text-[#435c7f] mx-3 leading-none transition"
               >
                 <i className="icon-social-youtube"></i>
               </Link>
               <Link
                 href="#"
                 aria-label="social links"
-                className="text-lg text-dark hover:text-orange mx-3 leading-none transition"
+                className="text-lg text-dark hover:text-[#435c7f] mx-3 leading-none transition"
               >
                 <i className="icon-social-dribbble"></i>
               </Link>

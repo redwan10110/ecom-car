@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 import Layout from "@/components/Layout/Layout";
 import Navigation from "@/components/Shared/Navigation";
 import LandingPage from "@/components/Home/LandingPage";
-
+import Footer from "@/components/Shared/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,10 +17,34 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      
-      <Navigation></Navigation>
-      <LandingPage></LandingPage>
 
+      <Navigation></Navigation>
+      <div className="lg:mt-[70px] mt-[80px]">
+        {/* Breadcrumb section start */}
+        <div
+          className="py-0 bg-gray-light"
+          style={{
+            backgroundImage: "url('/images/GreyBar.png')",
+            backgroundPosition: "center",
+          }}
+        >
+          <div className="container">
+            <div className="grid grid-cols-12 gap-x-4">
+              <div className="col-span-12">
+                <nav>
+                  <h2 className="ml-0 lg:ml-[160px] lg:text-transparent text-[25px] mb-[-10px]">
+                  Home
+                </h2>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* Breadcrumb section end  */}
+      </div>
+
+      <LandingPage></LandingPage>
+      <Footer></Footer>
     </>
   );
 }

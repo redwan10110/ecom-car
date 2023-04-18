@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout/Layout";
+import DescriptionTab from "@/components/Shop/DescriptionTab";
 import ProductsDetails from "@/components/Shop/ProductsDetails";
 import { useRouter } from "next/router";
 
@@ -10,6 +11,7 @@ const ProductId = () => {
       <Layout>
         <div className="lg:mt-[70px] mt-[80px]">
           <ProductsDetails></ProductsDetails>
+          <DescriptionTab></DescriptionTab>
         </div>
       </Layout>
     </>

@@ -16,9 +16,9 @@ const LandingPage = () => {
               {/* <!-- swiper-slide start --> */}
               <SwiperSlide
                 className="swiper-slide 2xl:h-800 lg:h-700px flex flex-wrap items-center px-4 md:px-10 2xl:px-24 py-40 lg:py-20  bg-no-repeat bg-left-bottom bg-sky-100 bg-cover"
-                style={{ backgroundImage: "url('/images/hero/slide6.webp')" }}
+                style={{ backgroundImage: "url('/images/TidyTrunk_landingpage-02.png')",width:"100%",height:"700px" }}
               >
-                <div className="container">
+                {/* <div className="container">
                   <div className="grid grid-cols-12 gap-4">
                     <div className="col-span-12">
                       <div className="flex flex-col md:flex-row items-center justify-between w-full">
@@ -52,16 +52,16 @@ const LandingPage = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </SwiperSlide>
               {/* <!-- swiper-slide end--> */}
 
               {/* <!-- swiper-slide start --> */}
               <SwiperSlide
                 className="swiper-slide 2xl:h-800 lg:h-700px flex flex-wrap items-center px-4 md:px-10 2xl:px-24 py-20 lg:py-20  bg-no-repeat bg-left-bottom bg-sky-100 bg-cover"
-                style={{ backgroundImage: "url('/images/hero/slide7.webp')" }}
+                style={{ backgroundImage: "url('/images/TidyTrunk_landingpage-03.png')", height:"700px" }}
               >
-                <div className="container">
+                {/* <div className="container">
                   <div className="grid grid-cols-12 gap-4">
                     <div className="col-span-12">
                       <div className="flex flex-col md:flex-row items-center justify-between w-full">
@@ -95,7 +95,7 @@ const LandingPage = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </SwiperSlide>
               {/* <!-- swiper-slide end--> */}
 
@@ -103,10 +103,10 @@ const LandingPage = () => {
               <SwiperSlide
                 className="swiper-slide 2xl:h-800 lg:h-700px flex flex-wrap items-center px-4 md:px-10 2xl:px-24 py-20 lg:py-20  bg-no-repeat bg-left-bottom bg-sky-100 bg-cover"
                 style={{
-                  backgroundImage: "url('/images/hero/slide8.webp')",
+                  backgroundImage: "url('/images/TidyTrunk_landingpage-04.png')", height:"700px"
                 }}
               >
-                <div className="container">
+                {/* <div className="container">
                   <div className="grid grid-cols-12 gap-4">
                     <div className="col-span-12">
                       <div className="flex flex-col md:flex-row items-center justify-between w-full">
@@ -140,7 +140,7 @@ const LandingPage = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </SwiperSlide>
               {/* <!-- swiper-slide end--> */}
             </Swiper>
@@ -154,11 +154,12 @@ const LandingPage = () => {
       {/* Hero end*/}
 
       {/* <!-- Featured section start --> */}
-      <section className="pt-24 pb-24">
+      <section className="pt-24 pb-24" style={{backgroundImage:"url('/images/TidyTrunk_landingpage-06.png')",height:"800px",width:"100%",backgroundRepeat:"no-repeat", backgroundSize:"contain"}}>
         <div className="container">
           <div className="flex items-center -mx-4 flex-wrap">
             <div className="w-full md:w-1/2 px-4">
-              <span className="text-md font-medium text-orange block mb-4">
+              
+              {/* <span className="text-md font-medium text-orange block mb-4">
                 #FEATURED PRODUCT
               </span>
               <h2 className="font-playfair font-bold text-primary text-[30px] sm:text-[36px] xl:text-[48px] leading-tight mb-5">
@@ -177,18 +178,18 @@ const LandingPage = () => {
                 className="bg-gray-800 transition-all hover:bg-[#435c7f] hover:text-white px-5 md:px-12 py-3 md:py-4 xl:py-4 rounded-full text-white capitalize font-medium text-sm lg:text-md inline-block mt-8 leading-normal"
               >
                 Buy Now
-              </a>
+              </a> */}
             </div>
 
             <div className="w-full md:w-1/2 px-4">
-              <Image
+              {/* <Image
                 className="mt-8 md:mt-0 w-full h-full"
                 src="/images/bags/bag1.webp"
                 alt="product image"
                 loading="lazy"
                 width="570"
                 height="602"
-              />
+              /> */}
             </div>
           </div>
         </div>
@@ -196,8 +197,9 @@ const LandingPage = () => {
       {/* <!-- Featured section end --> */}
 
       {/* <!-- Explore section start --> */}
-      <section className="product-banner-section bg-gray-200 pt-24 pb-24">
-        <div className="container">
+      <section className="product-banner-section bg-gray-200 pt-24 pb-24"  style={{backgroundImage:"url('/images/TidyTrunk_landingpage-08.png')",height:"800px", width:"100%", backgroundRepeat:"no-repeat",backgroundSize:"contain"}}>
+        
+        {/* <div className="container">
           <div className="text-center pb-14">
             <span className="text-md font-normal text-orange block mb-4">
               EXPLORE THE AWESOME
@@ -318,14 +320,14 @@ const LandingPage = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
       {/* <!-- Explore section end --> */}
 
       {/* <!-- SmartBag section start --> */}
 
-      <section className="pt-24 pb-24">
-        <div className="container">
+      <section className="pt-24 pb-24" style={{backgroundImage:"url('/images/TidyTrunk_landingpage-10.png')",height:"800px", width:"100%", backgroundRepeat:"no-repeat",backgroundSize:"contain"}}>
+        {/* <div className="container">
           <div className="lg:grid lg:grid-cols-2 gap-4">
             <div className="lg:px-5 flex items-center mb-8 md:mb-0">
               <Image
@@ -414,7 +416,7 @@ const LandingPage = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
 
       {/* <!-- SmartBag section end --> */}

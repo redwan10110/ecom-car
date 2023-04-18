@@ -2383,8 +2383,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .custom-tab-nav .active a {
-  --tw-text-opacity: 1;
-  color: rgb(252 101 57/var(--tw-text-opacity));
+  /* --tw-text-opacity: 1;
+  color: rgb(252 101 57/var(--tw-text-opacity)); */
+  color: #435c7f;
 }
 
 .checkbox:checked + label::before {
@@ -2480,8 +2481,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 .gallery-nav .swiper-slide-thumb-active {
   border-width: 1px;
   border-style: solid;
-  --tw-border-opacity: 1;
-  border-color: rgb(252 101 57/var(--tw-border-opacity));
+  border-color: #435c7f;
 }
 
 .account-nav .active {

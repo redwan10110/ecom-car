@@ -42,8 +42,9 @@ const ProductsDetails = () => {
                 <span className="font-semibold uppercase text-sm text-red-500 inline-block py-1 px-2 leading-none absolute top-3  z-10 right-3 ">
                   Sale
                 </span>
-
-                <Swiper className="mySwiper mb-[30px]">
+                {/* Here Product Slider */}
+                <ProductCarousel></ProductCarousel>
+                {/* <Swiper className="mySwiper mb-[30px]">
                   <SwiperSlide>
                     <Image
                       width={559}
@@ -84,12 +85,23 @@ const ProductsDetails = () => {
                       alt="product image"
                     />
                   </SwiperSlide>
-                </Swiper>
+                </Swiper> */}
 
-                <div className="gallery-nav relative">
-                  <div className="swiper-container">
-                    <div className="swiper-wrapper">
-                      <div className="swiper-slide">
+                {/* <div className="gallery-nav relative"> */}
+                  {/* <div className="">
+                    <Swiper className="mySwiper" slidesPerView={4}>
+                      <SwiperSlide className="">
+                        <Link href="#">
+                          <Image
+                            width={132}
+                            height={147}
+                            src="/images/single-product/sm/product1.webp"
+                            alt="product image"
+                            className="swiper-slide-thumb-active"
+                          />
+                        </Link>
+                      </SwiperSlide>
+                      <SwiperSlide className="">
                         <Link href="#">
                           <Image
                             width={132}
@@ -98,18 +110,8 @@ const ProductsDetails = () => {
                             alt="product image"
                           />
                         </Link>
-                      </div>
-                      <div className="swiper-slide">
-                        <Link href="#">
-                          <Image
-                            width={132}
-                            height={147}
-                            src="/images/single-product/sm/product2.webp"
-                            alt="product image"
-                          />
-                        </Link>
-                      </div>
-                      <div className="swiper-slide">
+                      </SwiperSlide>
+                      <SwiperSlide className="">
                         <Link href="#">
                           <Image
                             width={132}
@@ -118,8 +120,8 @@ const ProductsDetails = () => {
                             alt="product image"
                           />
                         </Link>
-                      </div>
-                      <div className="swiper-slide">
+                      </SwiperSlide>
+                      <SwiperSlide className="">
                         <Link href="#">
                           <Image
                             width={132}
@@ -128,8 +130,8 @@ const ProductsDetails = () => {
                             alt="product image"
                           />
                         </Link>
-                      </div>
-                      <div className="swiper-slide">
+                      </SwiperSlide>
+                      <SwiperSlide className="">
                         <Link href="#">
                           <Image
                             width={132}
@@ -138,20 +140,21 @@ const ProductsDetails = () => {
                             alt="product image"
                           />
                         </Link>
-                      </div>
-                    </div>
-                  </div>
+                      </SwiperSlide>
+                    </Swiper>
+                  </div>  */}
                   {/* <!-- If we need pagination --> */}
                   {/* <!-- <div className="swiper-pagination"></div> --> */}
-                  <div className="swiper-buttons">
+                  {/* <div className="swiper-buttons">
                     <div className="swiper-button-prev right-auto left-4  w-8 h-8 rounded-full  border border-solid border-gray-500 text-sm text-dark opacity-100 transition-all hover:text-orange hover:border-orange">
                       <i className="ion-chevron-left"></i>
                     </div>
                     <div className="swiper-button-next left-auto right-4  w-8 h-8 rounded-full  border border-solid border-gray-500 text-sm text-dark opacity-100 transition-all hover:text-orange hover:border-orange">
                       <i className="ion-chevron-right"></i>
                     </div>
-                  </div>
-                </div>
+                  </div> */}
+                {/* </div> */}
+
               </div>
             </div>
 
@@ -193,7 +196,7 @@ const ProductsDetails = () => {
                         min="1"
                         max="100"
                         step="1"
-                        value="1"
+                        defaultValue="1"
                         className="quantity__input flex-auto w-8 text-center focus:outline-none input-appearance-none"
                       />
                       <button
@@ -208,12 +211,7 @@ const ProductsDetails = () => {
                         Add to Cart
                       </button>
                     </div>
-                    <Link href="#" className="text-md ml-8">
-                      <i className="icon-heart"></i>
-                    </Link>
-                    <Link href="#" className="text-md ml-8">
-                      <i className="icon-refresh"></i>
-                    </Link>
+                    
                   </div>
                 </div>
 

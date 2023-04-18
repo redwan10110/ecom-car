@@ -7,7 +7,7 @@ const aboutUs = () => {
   return (
     <>
       <Layout>
-        <div className="mt-[60px]">
+        <div className="lg:mt-[70px] mt-[80px]">
           <AboutUsCom></AboutUsCom>
         </div>
       </Layout>

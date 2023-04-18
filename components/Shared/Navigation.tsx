@@ -74,7 +74,23 @@ const Navigation = () => {
                       Shop
                     </Link>
                   </li>
-                  <li className="main-menu__item relative group">
+                  <li className="main-menu__item group">
+                    <Link
+                      className="block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-dark hover:text-[#435c7f] transition-all nav-item"
+                      href="/about-us"
+                    >
+                      About Us
+                    </Link>
+                  </li>
+                  <li className="main-menu__item group">
+                    <Link
+                      className="block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-dark hover:text-[#435c7f] transition-all nav-item"
+                      href="/contact"
+                    >
+                      Contact Us
+                    </Link>
+                  </li>
+                  {/* <li className="main-menu__item relative group">
                     <Link
                       className="block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-dark hover:text-[#435c7f] transition-all nav-item"
                       href="#"
@@ -132,7 +148,7 @@ const Navigation = () => {
                         </Link>
                       </li>
                     </ul>
-                  </li>
+                  </li> */}
                 </ul>
               </nav>
             </div>
@@ -354,6 +370,14 @@ const Navigation = () => {
               </li>
               <li className="relative block">
                 <Link
+                  href="/contact"
+                  className="block capitalize font-normal text-base my-2 py-1 font-roboto"
+                >
+                  Contact Us
+                </Link>
+              </li>
+              {/* <li className="relative block">
+                <Link
                   href="/cart"
                   className="block capitalize font-normal text-base my-2 py-1 font-roboto"
                 >
@@ -391,7 +415,7 @@ const Navigation = () => {
                 >
                   Account Page
                 </Link>
-              </li>
+              </li> */}
               
             </ul>
           </nav>
